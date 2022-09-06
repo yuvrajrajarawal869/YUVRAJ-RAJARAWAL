@@ -1,0 +1,192 @@
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+
+@media (max-width: 806px) { 
+  
+  .Profilepic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+  }
+}
+@media (max-width) {
+  #mainNavMobile{
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 806px){ 
+
+.Profilepic{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+}
+@media (max-width: 650px){ 
+
+  .Profilepic{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    
+  }
+  }
+
+
+@media (max-width: 575px) { 
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 30px;
+      margin-bottom: 10px;
+      padding: 20px;
+    }
+    
+  }
+  @media (min-width: 575px){ 
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+  }
+  
+  
+  
+  .project-img {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-top: 0;
+    border: 1px solid black;
+  }
+  
+  .project-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+    transition: var(--transition-1);
+  }
+  
+  .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+  
+  .project-item-icon-box {
+    --scale: 0.8;
+  
+    background: var(--jet);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+    font-size: 30px;
+    padding: 18px;
+    border-radius: 12px;
+    opacity: 0;
+    z-index: 1;
+    transition: var(--transition-1);
+  }
+  
+  .project-item > a:hover .project-item-icon-box {
+    --scale: 1;
+    opacity: 1;
+  }
+  
+  .project-item-icon-box ion-icon { --ionicon-stroke-width: 50px; }
+  
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-1);
+  }
+  
+  .project-item > a:hover img { transform: scale(1.1); }
+  
+  .project-title,
+  .project-category { margin-left: 10px; }
+  
+  .project-title {
+    color: var(--white-2);
+    font-size: 20px;
+    font-weight: var(--fw-400);
+    text-transform: capitalize;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .project-category {
+    color: var(--light-gray-70);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+  }
+  
+  
+  
+  @media (min-width: 950px){ 
+    .git{
+      width: 100%;
+      height: 280px;
+    }
+    .gitdiv{
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .GitHubAnalytics{
+      text-align: center;
+      margin-bottom: 70px;
+    }
+  
+    .gitimg{  
+      margin-bottom: 100px;
+      margin-top: 30px;
+    }
+    }
+  
+    @media (max-width: 950px){ 
+      .git{
+        width: 100%;
+        height: auto;
+      }
+      .gitdiv{
+        width: 100%;
+        height: auto;
+      }
+      .gitimg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -15px;
+        margin-top: -15px;   
+      }
+      .GitHubAnalytics{
+        text-align: center;
+      }
+      }
+  
