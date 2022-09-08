@@ -164,8 +164,10 @@
     }
   
     .gitimg{  
-      margin-bottom: 100px;
-      margin-top: 30px;
+      width: 600px;
+        height: 200px;
+        margin-bottom: 130px;
+        padding: 10px 10px 10px 10px;
     }
     }
   
@@ -182,8 +184,10 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 15px;
         margin-top: -15px;
-        margin-top: -15px;   
+        width: 70%;
+         
       }
       .GitHubAnalytics{
         text-align: center;
