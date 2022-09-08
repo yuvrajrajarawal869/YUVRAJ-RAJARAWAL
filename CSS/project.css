@@ -153,7 +153,7 @@
     }
     .gitdiv{
       width: 100%;
-      height: 200px;
+      height: 120px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -164,9 +164,8 @@
     }
   
     .gitimg{  
-      width: 600px;
+      width:80%;
         height: 200px;
-        margin-bottom: 130px;
         padding: 10px 10px 10px 10px;
     }
     }
@@ -179,14 +178,14 @@
       .gitdiv{
         width: 100%;
         height: auto;
+        padding-bottom: 50px;
       }
       .gitimg{
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 15px;
-        margin-top: -15px;
-        width: 70%;
+        width: 100%;
          
       }
       .GitHubAnalytics{
